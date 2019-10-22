@@ -136,8 +136,8 @@ nav a:hover::before {
 
 .text-box {
     text-align: center;
-    padding: 40px;
-    margin: 300px 0px 450px;
+    padding: 10px;
+    margin: 250px 0px 450px;
 
     background-color: antiquewhite;
     /* box-shadow: 3px 3px 5px 6px #ccc; */
