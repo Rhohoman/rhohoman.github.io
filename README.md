@@ -1,2 +1,4 @@
 # rhohoman.github.io
-github pages
+-github pages
+-html/css
+-little bits of JS
