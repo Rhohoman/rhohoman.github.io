@@ -1,7 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" >
+        <link rel="stylesheet" type="text/css" href="styles.css" >
+        <meta charset="UTF-8">
+        <title>Ryan's Personal Page</title>
+    </head>
+
     <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with Github Pages.</p>
+
+        <div class="wrapper">
+            
+            <div class='content'>
+                
+                <div class="nav-container">
+                    <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#tech">Technologies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </nav>
+                </div>
+            
+                <div class='opening-page'>
+                    <div class='text-box'>
+                        <h1 class='heading-primary'>
+                            <span class='heading-primary-main'>Ryan Ho</span>
+                            <span class='heading-primary-sub'>Full Stack Web Developer</span>
+                        </h1>
+
+                        <!-- <div id="cf">
+                            <img class="bottom" src="images\Adrianna-Calvo-photo.jpg" style="width:128px;height:128px;"/>
+                            <img class="top" src="images\Simon-migaj-photo.jpg" style="width:128px;height:128px;"/>
+                        </div> -->
+                    </div>
+                </div>
+
+                <section id='about' class="about-container">
+                    
+                        <h1>About</h1>
+
+                        <div class="about-text-box">
+                            <p> A curious mind driven by a desire to learn. I wake up every morning driven to learn and create projects that people can benefit from.
+                                From University, I attended <a href="https://flatironschool.com/career-courses/coding-bootcamp">the Flatiron School's 15 week immersive Software Engineering program</a> where I worked with other aspiring developers on projects that we were passionate about.
+                                These days I am looking for the next adventure to bring my problem solving abilities and positivity to a company with high growth development.</p>
+                            <p> From puzzles to fixing knots, solving problems has always been in my life and I try to apply that same attitude in my projects.
+                                I like to revolve my projects around making people's lifestyles easier by transforming complex tasks into more user friendly experiences.
+                                Currently, my focus is using React and JavaScript to create these projects.</p>
+                        </div>
+                </section>
+
+                
+                <section id='projects' class="proj-container">
+                    
+                        <h1>Projects</h1>
+                        
+                        <ul>
+                            <h3>Yum Culture</h3>
+                            <img src="website-images\yumculture\yumculturehome.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\yumculture\yumculturehomefoods.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\yumculture\yumcultureyoutube.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\yumculture\yumcultureforum.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=uwj-uT4VeOQ&t=9s" target="_blank">Demo</a>
+                                |
+                                <a href="https://github.com/Rhohoman/yum-culture-frontend" target="_blank">Frontend</a>
+                                |
+                                <a href="https://github.com/Rhohoman/yum-culture-backend" target="_blank">Backend</a>
+                            </li>
+
+                            
+                            <h3>Webcam Travel</h3>
+                            <img src="website-images\webcam\webcamhome.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\webcam\webcammore.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=vBu1ShavCvg" target="_blank">Demo</a>
+                                |
+                                <a href="https://github.com/Rhohoman/webcam-travel-frontend" target="_blank">Frontend</a>
+                                |
+                                <a href="https://github.com/Rhohoman/webcam-travel-backend" target="_blank">Backend</a>
+                            </li>
+                            
+                            <h3>Park Ball</h3>
+                            <img src="website-images\parkball\parkballplayers.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\parkball\parkballteams.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\parkball\parkballgames.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <img src="website-images\parkball\parkballanalytics.png" alt="" width='350px' height='200px' onclick="onClick(this)" class="modal-hover-opacity">
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=m_pOXSNjNLQ" target="_blank">Demo</a>
+                                |
+                                <a href="https://github.com/Rhohoman/Park_ball" target="_blank">Code</a>
+                            </li>
+                            
+
+                            <div id="modal01" class="modal" onclick="this.style.display='none'">
+                                <div class="modal-content">
+                                    <img id="img01" style="max-width:100%">
+                                </div>
+                            </div>
+
+                        </ul>
+                    
+                </section>
+
+                <section id='tech' class="tech-container">
+                    
+                        <h1>Technologies</h1>
+                        <p>Just a few things I am familiar with. Check out my <a href="https://github.com/Rhohoman" target="_blank">Github</a> to see what I've created using these technologies.</p>
+                        <ul>
+                            <li><a href="https://rubyonrails.org/" target="_blank"><img src="images/ruby-on-rails-logo.png" alt="Ruby on Rails icon"
+                                height="120"></a></li>
+                            <li><a href="https://www.javascript.com/" target="_blank"><img src="images/JavaScript-logo.png" alt="JS icon"
+                                height="120"></a></li>
+                            <li><a href="https://reactjs.org/" target="_blank"><img src="images/react-logo.png" alt="React.js icon"
+                                height="120"></a></li>
+                            <li><a href="https://redux.js.org/" target="_blank"><img src="images/redux-logo.png" alt="Redux.js icon"
+                                height="120"></a></li>
+                        </ul>
+                    
+                </section>
+
+                <section id='contact' class="contact-container" class='footer'>
+                <!-- <div id='contact' class="contact-container" class='footer'> -->
+                    
+                        <h1>Contact</h1>
+                        <div class="contact-info">
+                            <p>Feel free to contact me at "rhohoman@gmail.com" or reach out on my <a href="https://www.linkedin.com/in/rhoho/" target="_blank">LinkedIn</a>.</p>
+                            
+                            <p>Some of my projects can be seen on my <a href="https://github.com/Rhohoman" target="_blank">Github</a>.</p>
+                        </div>
+                    
+                </section>    
+            </div>
+        </div>
+
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+            }
+        </script>        
+        
     </body>
+
 </html>

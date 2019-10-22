@@ -1,0 +1,443 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    /* float: right; */
+    right: 100px;
+    position: fixed;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: black;
+    /* color: #444; */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: rgb(0, 0, 0);
+
+    position: absolute;
+    top: 0;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.wrapper {
+    background-image: url('https://images.unsplash.com/photo-1524654458049-e36be0721fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+
+    background-color: hsla(200,40%,30%,.4);
+    background-image: url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    /* background-image: url('https://images.unsplash.com/photo-1524654458049-e36be0721fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'),
+        url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+        url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'); */
+        
+    background-position: 0 50%,
+                        0 20%;
+    background-attachment: fixed;
+	background-repeat: repeat-x;
+    background-size: cover;
+    animation: 50s para infinite linear;
+}
+
+@keyframes para {
+	100% {
+		background-position: 
+            1000px 100%,
+            400px 0;
+		}
+	}
+
+.content section {
+    height: 100%;
+    background-color: #fff;
+}
+
+.content section h1 {
+    margin: 100px 0px 0px 0px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 35px;
+    text-shadow: 
+      /* 1px -1px 0 #767676,  */
+      -1px 2px 1px #737272
+}
+
+.content section p {
+    text-align: center;
+    margin: 75px 100px 0px;
+    line-height: 3.5;
+}
+
+.opening-page {
+    /* background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100vh;
+    margin-bottom: 150px;
+}
+
+.text-box {
+    text-align: center;
+    padding: 40px;
+    margin: 300px 0px 450px;
+
+    background-color: antiquewhite;
+    /* box-shadow: 3px 3px 5px 6px #ccc; */
+}
+
+
+.heading-primary {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: black;
+
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    margin-bottom: 25px;
+
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translate(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translate(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section.tech-container ul {
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-gap: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+section.tech-container li {
+    margin: 50px;
+}
+
+section.proj-container li {
+    text-align: center;
+}
+
+section.about-container {
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    min-height: 100vh;
+    background-color: rgba(192,192,192,0.7);
+
+}
+
+.about-text-box {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-text-box a:hover {
+    color: white;
+}
+
+.about-text-box a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.proj-container {
+    background-image: url('https://images.pexels.com/photos/584305/pexels-photo-584305.jpeg?cs=srgb&dl=background-clips-eraser-584305.jpg&fm=jpg');
+    /* background-image: url('https://images.pexels.com/photos/733854/pexels-photo-733854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    /* display:inline-block; */
+    margin: 100px 0px 0px 0px;
+    padding-bottom: 50px;
+}
+
+.proj-container a {
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+}
+
+.proj-container a:hover {
+    color: white;
+}
+
+.proj-container h1 {
+    padding-top: 100px;
+}
+.proj-container h3 {
+    margin-top: 100px;
+    /* color:white; */
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.proj-container ul {
+    text-align: center;
+}
+
+.proj-container ul img {
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tech-container {
+    background-image: url('https://images.pexels.com/photos/733854/pexels-photo-733854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /* background-image: url('https://images.pexels.com/photos/1084510/pexels-photo-1084510.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+section.tech-container {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+section.tech-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section.tech-container a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+section.tech-container a:hover {
+    color:white;
+}
+
+section.tech-container ul img {
+    border-radius: 20%;
+}
+
+section.tech-container ul img:hover, section.tech-container ul img:focus {
+    box-shadow: 0 1.5em 1.5em -0.4em black;
+    transform: translateY(-0.45em);
+}
+
+section.contact-container {
+    box-shadow: -10px 10px 6px -2px black;
+    height: 80vh;
+
+    background: rgb(255,255,255);
+    background:
+        linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,230,233,1) 0%, rgba(147,219,233,1) 100%),
+        linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+    }
+
+section.contact-container h1{
+    padding-top: 100px;
+
+
+}
+
+.content section.contact-container {
+    text-align: center;
+    
+}
+
+.contact-container a {
+    /* text-decoration: none; */
+    color: black;
+    
+}
+
+.contact-container a:hover {
+    color: gray;
+}
+
+.contact-info {
+    padding-bottom: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+.modal {
+    z-index:1;
+    display:none;
+    padding-top: 15vh;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8)
+}
+    
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+    
+.modal-hover-opacity:hover {
+    opacity:0.70;
+}
+
+.modal-content {   
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+    
+    
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform:scale(0)
+    } 
+    to {
+        -webkit-transform:scale(1)
+    }
+}
+    
+@keyframes zoom {
+    from {
+        transform:scale(0)
+    } 
+
+    to {
+        transform:scale(1)
+    }
+}
+
+@media only screen and (max-width: 700px){
+   .modal-content {
+     width: 100%;
+   }
+}
+
+
+
+#container
+{
+    height:2000px;    
+}
+
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:pink; 
+}
+
+.hideme
+{
+    opacity:0;
+}
