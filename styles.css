@@ -300,7 +300,7 @@ section.about-container {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: auto;
+    overflow: hidden;
 }
 
 section.tech-container {
